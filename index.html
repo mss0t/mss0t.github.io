@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="alternate"
+      type="application/rss+xml"
+      href="https://example.com/rss.xml"
+      title="RSS feed for https://example.com/">
+<title>Posts about math</title>
+
+<link href= "white_clean.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="static/favicon.ico">
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script></head>
+<body>
+<div id="preamble" class="status"></div>
+<div id="content">
+
+<div class="post-date">17 Aug 2021</div><h1 class="post-title"><a href="https://example.com/testpost.html">Test</a></h1>
+
+<div id="outline-container-org79bf2ae" class="outline-2">
+<h2 id="org79bf2ae">First section, some code</h2>
+<div class="outline-text-2" id="text-org79bf2ae">
+<div class="org-src-container">
+<pre class="src src-python">def make_truth_table(bit_names, logic):
+  print("|", end='')
+  for x in bit_names:
+    print(x, end = '|')
+  print("OUTPUT|")
+  print("|-")
+  for i in range(2**len(bit_names)):
+    n = i
+    bool_array = []
+    for j in range(len(bit_names)):
+      bool_array = [(n%2 == 1)] + bool_array
+      n = n//2
+    output = logic(*bool_array)
+    print("|", end='')
+    for x in bool_array:
+      print(int(x), end = '|')
+    print(str(int(output)) + "|")
+
+make_truth_table(['A', 'B', 'C'], lambda a,b,c:not a or not b and c)
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org664fe3f" class="outline-2">
+<h2 id="org664fe3f">Second section, some TeX embeds</h2>
+<div class="outline-text-2" id="text-org664fe3f">
+</div>
+<div id="outline-container-org3a6bea4" class="outline-3">
+<h3 id="org3a6bea4">Embed one</h3>
+<div class="outline-text-3" id="text-org3a6bea4">
+<p>
+\(e^{\pi i} = -1\)
+</p>
+</div>
+</div>
+<div id="outline-container-orgc2ad104" class="outline-3">
+<h3 id="orgc2ad104">Embed two</h3>
+<div class="outline-text-3" id="text-orgc2ad104">
+<p>
+\(5+3 = 8\)
+</p>
+</div>
+</div>
+</div>
+<div class="taglist"></div><div id="archive">
+<a href="https://example.com/archive.html">Other posts</a>
+</div>
+</div>
+<div id="postamble" class="status"></div>
+</body>
+</html>
