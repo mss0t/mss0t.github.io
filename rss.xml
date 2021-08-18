@@ -4,63 +4,18 @@
 <title><![CDATA[Posts about math]]></title>
 <description><![CDATA[Posts about math]]></description>
 <link>https://example.com/</link>
-<lastBuildDate>Tue, 17 Aug 2021 17:16:36 -0400</lastBuildDate>
+<lastBuildDate>Wed, 18 Aug 2021 15:00:07 -0400</lastBuildDate>
 <item>
   <title><![CDATA[Test]]></title>
   <description><![CDATA[
 
-<div id="outline-container-org79bf2ae" class="outline-2">
-<h2 id="org79bf2ae">First section, some code</h2>
-<div class="outline-text-2" id="text-org79bf2ae">
-<div class="org-src-container">
-<pre class="src src-python">def make_truth_table(bit_names, logic):
-  print("|", end='')
-  for x in bit_names:
-    print(x, end = '|')
-  print("OUTPUT|")
-  print("|-")
-  for i in range(2**len(bit_names)):
-    n = i
-    bool_array = []
-    for j in range(len(bit_names)):
-      bool_array = [(n%2 == 1)] + bool_array
-      n = n//2
-    output = logic(*bool_array)
-    print("|", end='')
-    for x in bool_array:
-      print(int(x), end = '|')
-    print(str(int(output)) + "|")
+<figure>
+<img src="./img/cat.png" alt="cat.png" width="500px">
 
-make_truth_table(['A', 'B', 'C'], lambda a,b,c:not a or not b and c)
-</pre>
-</div>
-</div>
-</div>
-
-<div id="outline-container-org664fe3f" class="outline-2">
-<h2 id="org664fe3f">Second section, some TeX embeds</h2>
-<div class="outline-text-2" id="text-org664fe3f">
-</div>
-<div id="outline-container-org3a6bea4" class="outline-3">
-<h3 id="org3a6bea4">Embed one</h3>
-<div class="outline-text-3" id="text-org3a6bea4">
-<p>
-\(e^{\pi i} = -1\)
-</p>
-</div>
-</div>
-<div id="outline-container-orgc2ad104" class="outline-3">
-<h3 id="orgc2ad104">Embed two</h3>
-<div class="outline-text-3" id="text-orgc2ad104">
-<p>
-\(5+3 = 8\)
-</p>
-</div>
-</div>
-</div>
+</figure>
 <div class="taglist"></div>]]></description>
-  <link>https://example.com/testpost.html</link>
-  <pubDate>Tue, 17 Aug 2021 17:16:36 -0400</pubDate>
+  <link>https://example.com/test.html</link>
+  <pubDate>Wed, 18 Aug 2021 15:00:07 -0400</pubDate>
 </item>
 </channel>
 </rss>
