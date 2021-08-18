@@ -3,8 +3,8 @@
 <channel>
 <title><![CDATA[Posts about math]]></title>
 <description><![CDATA[Posts about math]]></description>
-<link>https://example.com/</link>
-<lastBuildDate>Wed, 18 Aug 2021 15:00:07 -0400</lastBuildDate>
+<link>https://mss0t.github.io/</link>
+<lastBuildDate>Wed, 18 Aug 2021 15:11:13 -0400</lastBuildDate>
 <item>
   <title><![CDATA[Test]]></title>
   <description><![CDATA[
@@ -14,8 +14,18 @@
 
 </figure>
 <div class="taglist"></div>]]></description>
-  <link>https://example.com/test.html</link>
-  <pubDate>Wed, 18 Aug 2021 15:00:07 -0400</pubDate>
+  <link>https://mss0t.github.io/test.html</link>
+  <pubDate>Wed, 18 Aug 2021 15:11:13 -0400</pubDate>
+</item>
+<item>
+  <title><![CDATA[The Roots of Completeness]]></title>
+  <description><![CDATA[
+<p>
+text text text 
+</p>
+<div class="taglist"></div>]]></description>
+  <link>https://mss0t.github.io/completeness.html</link>
+  <pubDate>Wed, 18 Aug 2021 15:11:13 -0400</pubDate>
 </item>
 </channel>
 </rss>
